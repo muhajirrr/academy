@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('tugas1')->group(function() {
+    Route::get('/nomor1', 'Tugas1Controller@nomor1')->name('nomor1');
+    Route::post('/nomor2', 'Tugas1Controller@nomor2')->name('nomor2');
+    Route::get('/nomor3', 'Tugas1Controller@nomor3')->name('nomor3');
+    Route::put('/nomor3', 'Tugas1Controller@nomor3_put')->name('nomor3_put');
+});
