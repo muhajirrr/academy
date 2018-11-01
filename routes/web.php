@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
+
+Route::view('/example', 'example');
 
 Route::prefix('tugas1')->group(function() {
     Route::get('/nomor1', 'Tugas1Controller@nomor1')->name('nomor1');
