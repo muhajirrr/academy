@@ -1,12 +1,13 @@
 @extends('template.layout')
 
-@section('title', url()->full() === route('nomor1') ? 'Nomor 1' : 'Nomor 2')
+@section('title', url()->full() === route('nomor3') ? 'Nomor 3' : 'Nomor 2')
 
 @section('content')
 <div class="row" style="padding-bottom:16px">
     <div class="col-xs-6">
-        <form action="{{ route('nomor2') }}" method="POST">
+        <form action="{{ route('nomor3_put') }}" method="POST">
             @csrf
+            @method('PUT')
             <div class="form-group">
                 <label>Nama</label>
                 <input type="text" class="form-control" name="nama" placeholder="Nama">

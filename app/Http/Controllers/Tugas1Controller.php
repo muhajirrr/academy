@@ -17,7 +17,7 @@ class Tugas1Controller extends Controller
     }
     
     public function nomor3() {
-        return view('tugas1.nomor1');
+        return view('tugas1.nomor3');
     }
 
     public function nomor3_put(Request $request) {
