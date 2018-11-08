@@ -23,6 +23,9 @@
             <li>
                 <a href="{{ route('nomor3') }}">Nomor 3</a>
             </li>
+            <li>
+                <a href="{{ route('tugas3') }}">Tugas 3</a>
+            </li>
         </ul>
     </div>
 </div>
