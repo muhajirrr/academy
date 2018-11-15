@@ -27,3 +27,9 @@ Route::prefix('tugas3')->group(function() {
     Route::get('/', 'Tugas3Controller@index')->name('tugas3');
     Route::post('/show', 'Tugas3Controller@show')->name('tugas3.show');
 });
+
+Route::prefix('tugas4')->group(function() {
+    Route::get('/', 'Tugas4Controller@create')->name('tugas4');
+    Route::get('/show', 'Tugas4Controller@show')->name('tugas4.show');
+    Route::post('/store', 'Tugas4Controller@store')->name('tugas4.store');
+});
