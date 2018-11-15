@@ -16,14 +16,20 @@
             </div>
         @endif
 
+        <div class="row">
+            <div class="col">
+                <a href="{{ route('tugas4.show') }}" class="btn btn-info pull-right">Show Data</a>
+            </div>
+        </div>
+
         <form action="{{ route('tugas4.store') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label>Categories</label>
-                <select name="category_id">
+                <select name="category_id" class="form-control">
                     <option value="" selected>Select Category</option>
                     @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->nama }}</option>
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
                 </select>
             </div>
@@ -35,7 +41,7 @@
 
             <div class="form-group">
                 <label>Description</label>
-                <textarea name="description" id="" cols="30" rows="3"></textarea>
+                <textarea name="description" class="form-control" cols="30" rows="3"></textarea>
             </div>
 
             <div class="form-group">
