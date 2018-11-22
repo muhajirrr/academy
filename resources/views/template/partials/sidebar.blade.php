@@ -29,6 +29,9 @@
             <li>
                 <a href="{{ route('tugas4') }}">Tugas 4</a>
             </li>
+            <li>
+                <a href="{{ route('tugas5.article.create') }}">Tugas 5</a>
+            </li>
         </ul>
     </div>
 </div>

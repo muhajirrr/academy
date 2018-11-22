@@ -33,3 +33,10 @@ Route::prefix('tugas4')->group(function() {
     Route::get('/show', 'Tugas4Controller@show')->name('tugas4.show');
     Route::post('/store', 'Tugas4Controller@store')->name('tugas4.store');
 });
+
+Route::prefix('tugas5')->group(function() {
+    Route::get('/article', 'Tugas5Controller@show_article')->name('tugas5.article.show');
+    Route::get('/article/create', 'Tugas5Controller@create_article')->name('tugas5.article.create');
+    Route::post('/article/store', 'Tugas5Controller@store_article')->name('tugas5.article.store');
+    Route::get('/category', 'Tugas5Controller@show_category')->name('tugas5.category.show');
+});

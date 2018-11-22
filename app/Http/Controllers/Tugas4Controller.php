@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class Tugas4Controller extends Controller
 {
     public function create() {
-        $categories = DB::table('categories')->select('*')->get();
+        $categories = DB::table('kategoris')->select('*')->get();
 
         return view('tugas4.create', compact('categories'));
     }
